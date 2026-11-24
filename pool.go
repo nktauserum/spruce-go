@@ -34,12 +34,6 @@ type internalPool[T any] struct {
 	bitmap uint64
 }
 
-func createInternalPool[T any]() *internalPool[T] {
-	return &internalPool[T]{
-		bitmap: ^uint64(0),
-	}
-}
-
 func (p *internalPool[T]) acquire() uint32 {
 	return pool_acquire(&p.bitmap)
 }
