@@ -1,6 +1,6 @@
 //go:build !amd64
 
-package models
+package spruce 
 
 import (
 	"math/bits"

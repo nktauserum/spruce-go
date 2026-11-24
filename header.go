@@ -1,6 +1,6 @@
 //go:build amd64
-
-package models
+// Package spruce provides a highly-optimized buffer pool
+package spruce
 
 import "time"
 
